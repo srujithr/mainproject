@@ -1,0 +1,17 @@
+<!-- company_history.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company History</title>
+</head>
+<body>
+    <h2>Your Company History</h2>
+    <ul>
+        {% for item in data %}
+            <li>{{ data.field_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

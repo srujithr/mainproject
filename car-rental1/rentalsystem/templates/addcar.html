@@ -1,0 +1,30 @@
+{% block content %}
+{% load static %}
+    <form method="post" action="add_car" enctype="multipart/form-data">
+      {% csrf_token %}
+        <label class="name">name</label>
+    <input type="text" name="name">
+        <br>
+        <br>
+        <label class="name">carmodel</label>
+    <input type="text" name="car_model">
+         <br>
+        <br>
+        <label class="name">price</label>
+    <input type="text" name="price">
+         <br>
+        <br>
+        <label class="name">details</label>
+    <input type="text" name="details">
+         <br>
+        <br>
+        <label class="name">photo</label>
+    <input type="file" name="image">
+        <br>
+        <br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
+
+
+
